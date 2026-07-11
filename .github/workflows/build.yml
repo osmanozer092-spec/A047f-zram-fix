@@ -15,17 +15,6 @@ jobs:
     
       - name: Build Kernel
         run: |
-          # 1. Temizlik
-         
-          
-          # 2. Defconfig yükle (kendi defconfig isminle değiştir)
-          make ARCH=arm64 exynos850_defconfig 
-          
-          # 3. ZRAM ve ZSMALLOC'u kökten kapat (config dosyasını düzenle)
-          # Bu komutlar, defconfig'deki ilgili ayarları bulur ve kapatır.
-          
-          
-          # 4. Build scriptini çalıştır
           chmod +x build_kernel.sh
           ./build_kernel.sh
           
