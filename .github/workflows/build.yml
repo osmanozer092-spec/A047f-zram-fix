@@ -21,5 +21,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Kernel_Output
-          path: out/arch/arm64/boot/Image.gz-dtb # (Senin build scriptinin çıkış yoluna göre değiştir)
+          name: Kernel_Image
+          path: build_output/
